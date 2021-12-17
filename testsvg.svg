@@ -3,14 +3,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1920" height="1920" viewBox="0 0 600 600" xml:space="preserve">
 <desc>Created with Fabric.js 2.4.6</desc>
 <defs>
-	<style type="text/css"><![CDATA[
+	<!--<style type="text/css"><![CDATA[
 		@font-face {
 			font-family: 'LobsterTwo';
-			src: url('./fonts/LobsterTwo-Bold.ttf')
+			src: url('./fonts/LobsterTwo-Regular.ttf')
 			;
 		}
 		
-]]></style>
+]]></style>-->
 </defs>
 <g transform="matrix(7.1649888886 0 0 7.1649888886 300 300)"  >
 <path style="stroke: rgb(90,118,127); stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(90,118,127); fill-rule: nonzero; opacity: 1;"  transform=" translate(-15, -15)" d="M 29.878 15 c 0 4.697 -6.663 8.502 -14.878 8.502 S 0.122 19.698 0.122 15 S 6.785 6.498 15 6.498 S 29.878 10.303 29.878 15 z" stroke-linecap="round" />

@@ -2,6 +2,7 @@
 
 // Include the main TCPDF library (search for installation path).
 require_once('./tcpdf/tcpdf.php');
+require_once('./functions.php');
 
 
 // create new PDF document
@@ -33,6 +34,14 @@ $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 
 // add a page
 $pdf->AddPage();
+$svgContent = file_get_contents('newText.svg');
+
+$decoded_xml = simplexml_load_string($svgContent);
+
+$fontNameArr = getFontFromXML($decoded_xml[0]);
+
+//$pdf         = addFontInPDF($pdf, $fontNameArr);
+
 // set font
 //$fontFileName = '';
 //$fontpath  = "./fonts/Amiri-" . $fontFileName . "Regular.ttf";
@@ -49,7 +58,7 @@ $pdf->AddPage();
 //$pdf->setRasterizeVectorImages(true);
 
 
-$pdf->ImageSVG($file='testsvg.svg', $x=0, $y=0);
+$pdf->ImageSVG('@'.$svgContent, $x=0, $y=0);
 
 // ---------------------------------------------------------
 
@@ -59,3 +68,4 @@ $pdf->Output('test.pdf', 'D');
 //============================================================+
 // END OF FILE
 //============================================================+
+
